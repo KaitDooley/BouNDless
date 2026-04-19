@@ -83,7 +83,7 @@ const handleSubmit = async () => {
 
       {/* NAV */}
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.5rem 2rem", borderBottom: "1px solid rgba(0,0,0,0.1)" }}>
-        <Link href="/" style={{ fontSize: "1.3rem", fontWeight: 700, textDecoration: "none", color: "#1C1C1A" }}>bouNDless</Link>
+        <Link href="/" style={{ fontSize: "1.3rem", fontWeight: 700, textDecoration: "none", color: "#1C1C1A" }}>boundless</Link>
         <Link href="/" style={{ fontSize: "0.9rem", color: "#555", textDecoration: "none" }}>← Back</Link>
       </nav>
 
