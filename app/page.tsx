@@ -13,7 +13,7 @@ export default function LandingPage() {
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.5rem 2rem", borderBottom: "1px solid rgba(0,0,0,0.1)", position: "relative" }}>
         <span style={{ fontSize: "1.3rem", fontWeight: 700 }}>boundless</span>
 
-        {/* HAMBURGER BUTTON */}
+        {/* MENU BUTTON */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           style={{ background: "none", border: "none", cursor: "pointer", fontSize: "1.5rem", color: "#1C1C1A" }}
@@ -49,7 +49,18 @@ export default function LandingPage() {
       </nav>
 
       {/* HERO */}
-      <section style={{ padding: "8rem 2rem", textAlign: "center" }}>
+      <section style={{ padding: "4rem 2rem", maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
+  
+        <img
+          src="/logo.jpg" 
+          alt="Logo" 
+          style={{ 
+            maxWidth: "300px", // Don't let it take the whole screen width
+            height: "auto",     // Keep aspect ratio
+            margin: "0 auto 2rem",
+            display: "block" 
+          }}
+        />
         <h1 style={{ fontSize: "clamp(2.5rem, 6vw, 4rem)", fontWeight: 400, margin: "0 0 1.5rem", lineHeight: 1.1 }}>
           Our Mission.
         </h1>
