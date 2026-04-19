@@ -39,7 +39,7 @@ export default function LandingPage() {
             boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
           }}>
             <Link href="/donor" style={menuLink} onClick={() => setMenuOpen(false)}>For Donors</Link>
-            <Link href="/recipient" style={menuLink} onClick={() => setMenuOpen(false)}>For Recipients</Link>
+            <Link href="/building" style={menuLink} onClick={() => setMenuOpen(false)}>For Recipients</Link>
             <Link href="/leaderboard" style={menuLink} onClick={() => setMenuOpen(false)}>Leaderboard</Link>
             <Link href="/contact" style={menuLink} onClick={() => setMenuOpen(false)}>Contact Us</Link>
             <hr style={{ border: "none", borderTop: "1px solid rgba(0,0,0,0.08)", margin: "0.25rem 0" }} />
@@ -70,7 +70,7 @@ export default function LandingPage() {
 
         {/* THREE ENTRY POINTS */}
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-          <Link href="/recipient" style={{ border: "1.5px solid #1C1C1A", color: "#1C1C1A", padding: "0.85rem 2rem", borderRadius: "2rem", textDecoration: "none", fontSize: "0.95rem" }}>
+          <Link href="/building" style={{ border: "1.5px solid #1C1C1A", color: "#1C1C1A", padding: "0.85rem 2rem", borderRadius: "2rem", textDecoration: "none", fontSize: "0.95rem" }}>
             Learn More
           </Link>
           <Link href="/connect" style={{ background: "#C16B3A", color: "#fff", padding: "0.85rem 2rem", borderRadius: "2rem", textDecoration: "none", fontSize: "0.95rem" }}>
@@ -83,7 +83,7 @@ export default function LandingPage() {
       <section style={{ padding: "4rem 2rem", display: "flex", gap: "1.5rem", justifyContent: "center", flexWrap: "wrap" }}>
         {[
           { title: "Donors", desc: "Browse food bank requests and fund specific needs. Watch your impact grow on the leaderboard.", href: "/donor", color: "#C16B3A" },
-          { title: "Recipients", desc: "Find nearby food banks, browse available resources, and request a food delivery.", href: "/recipient", color: "#5A8F69" },
+          { title: "Recipients", desc: "Find nearby food banks, browse available resources, and request a food delivery.", href: "/building", color: "#5A8F69" },
         ].map((card) => (
           <div key={card.title} style={{ background: "#fff", borderRadius: "1rem", padding: "2rem", width: "260px", border: "1px solid rgba(0,0,0,0.08)" }}>
             <div style={{ width: "2rem", height: "2rem", borderRadius: "50%", background: card.color, marginBottom: "1rem", opacity: 0.85 }} />
@@ -116,7 +116,7 @@ export default function LandingPage() {
             {[
               { label: "Leaderboard", href: "/leaderboard" },
               { label: "For Donors", href: "/donor" },
-              { label: "For Recipients", href: "/recipient" },
+              { label: "For Recipients", href: "/building" },
               { label: "Food Bank Login", href: "/login" },
             ].map((link) => (
               <div key={link.label} style={{ marginBottom: "0.5rem" }}>
