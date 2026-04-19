@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 export default function ProtectedRoute({ children, requiredRole }: { children: React.ReactNode, requiredRole: string }) {
-  const { user, role, loading } = useAuth();
+  const { user, role, loading, verified } = useAuth();
   const router = useRouter();
 
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function ProtectedRoute({ children, requiredRole }: { children: R
     if (!user) router.push("/register");          // not logged in
     if (role === "foodbank" && !verified) router.push("/pending-approval");     // registed, awaiting verification
     if (role !== requiredRole) router.push("/");  // wrong role
-  }, [user, role, loading]);
+  }, [user, role, loading, verified, router, requiredRole]);
 
   if (loading) return <p>Loading...</p>;
   return <>{children}</>;
