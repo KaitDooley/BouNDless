@@ -114,7 +114,7 @@ export default function DonorPage() {
                     <div style={progressContainer}><div style={{ ...progressFill, width: `${(req.quantityFulfilled/req.quantity)*100}%` }} /></div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem' }}>
                       <span>{req.quantityFulfilled} / {req.quantity} lbs</span>
-                      <Link href="/get-connected" style={{ color: '#1C1C1A', fontWeight: 600 }}>I Can Help →</Link>
+                      <Link href="/contact" style={{ color: '#1C1C1A', fontWeight: 600 }}>I Can Help →</Link>
                     </div>
                   </div>
                 ))}
